@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Sites profissionais para pequenos negócios em BH. Entrega rápida, integração WhatsApp e presença no Google." />
+  <title>Sites para Negócios | Desenvolvedor Web</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Início">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Sites para Negócios</span>
+      </a>
+
+      <nav class="menu" aria-label="Menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#precos">Planos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="#contato">Orçamento</a>
+        <a class="btn btn--primary" id="ctaTop" href="#">WhatsApp</a>
+      </div>
+
+      <button class="hamb" id="hamb" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="mobile" id="mobile" hidden>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#precos">Planos</a>
+      <a href="#faq">Dúvidas</a>
+      <a class="btn btn--primary" id="ctaMobile" href="#">WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <div class="pill">📍 BH | Barreiro • Entrega rápida</div>
+          <h1>Seu negócio pode ter um <span class="grad">site profissional</span> que traz clientes.</h1>
+          <p>
+            Crio sites modernos para comércios e prestadores de serviço:
+            botão de WhatsApp, vitrine de serviços e presença no Google.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" id="ctaHero" href="#">Falar no WhatsApp</a>
+            <a class="btn btn--ghost" href="#precos">Ver planos</a>
+          </div>
+
+          <div class="hero__proof">
+            <div class="stat">
+              <div class="stat__num">5 dias</div>
+              <div class="stat__txt">pra entregar</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">100%</div>
+              <div class="stat__txt">responsivo</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">WhatsApp</div>
+              <div class="stat__txt">clicável</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <div class="card__head">
+              <div class="avatar" aria-hidden="true">👨🏾‍💻</div>
+              <div>
+                <div class="card__title">Desenvolvedor Web</div>
+                <div class="card__sub">Sites para pequenos negócios</div>
+              </div>
+            </div>
+
+            <div class="card__list">
+              <div class="item">✅ Apareça no Google</div>
+              <div class="item">✅ Mais pedidos no WhatsApp</div>
+              <div class="item">✅ Página rápida e moderna</div>
+              <div class="item">✅ Fácil de atualizar</div>
+            </div>
+
+            <div class="card__cta">
+              <a class="btn btn--primary btn--full" id="ctaCard" href="#">Quero meu site</a>
+              <small>Orçamento sem compromisso.</small>
+            </div>
+          </div>
+
+          <div class="trust">
+            <div class="trust__chip">🔒 Pagamento combinado</div>
+            <div class="trust__chip">🧾 Contrato/recibo</div>
+            <div class="trust__chip">⚡ Suporte inicial</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <h2>Serviços</h2>
+        <p class="muted">Escolha o que faz sentido para seu negócio.</p>
+
+        <div class="grid3">
+          <div class="box">
+            <h3>Site institucional</h3>
+            <p>Perfeito para salão, barbearia, loja, restaurante e prestadores.</p>
+            <ul>
+              <li>1 a 5 páginas</li>
+              <li>Botão WhatsApp</li>
+              <li>Mapa e redes sociais</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Landing page</h3>
+            <p>Uma página única para vender um serviço específico com CTA forte.</p>
+            <ul>
+              <li>Seção de benefícios</li>
+              <li>Depoimentos</li>
+              <li>Formulário/WhatsApp</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Google & presença</h3>
+            <p>Organização do básico para você aparecer e transmitir confiança.</p>
+            <ul>
+              <li>Textos e estrutura</li>
+              <li>Boas práticas SEO</li>
+              <li>Orientação Google Perfil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="como-funciona">
+      <div class="container">
+        <h2>Como funciona</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step__n">1</div>
+            <div>
+              <h3>Você me manda informações</h3>
+              <p>Nome, endereço, serviços, fotos e WhatsApp.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step__n">2</div>
+            <div>
+              <h3>Eu faço o layout e te envio</h3>
+              <p>Você aprova e pede ajustes (rápido e simples).</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step__n">3</div>
+            <div>
+              <h3>Publico e te entrego tudo</h3>
+              <p>Site no ar + acesso e orientações básicas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <h2>Portfólio</h2>
+        <p class="muted">Coloque aqui seus projetos assim que criar (ou exemplos). Você pode trocar depois.</p>
+
+        <div class="grid3">
+          <a class="work" href="#" aria-label="Projeto 1">
+            <div class="work__img"></div>
+            <div class="work__txt">
+              <strong>Landing – Barbearia</strong>
+              <span>WhatsApp + serviços</span>
+            </div>
+          </a>
+          <a class="work" href="#" aria-label="Projeto 2">
+            <div class="work__img"></div>
+            <div class="work__txt">
+              <strong>Site – Restaurante</strong>
+              <span>Cardápio + mapa</span>
+            </div>
+          </a>
+          <a class="work" href="#" aria-label="Projeto 3">
+            <div class="work__img"></div>
+            <div class="work__txt">
+              <strong>Site – Clínica</strong>
+              <span>Agendamento</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="precos">
+      <div class="container">
+        <h2>Planos</h2>
+        <p class="muted">Você pode começar no básico e evoluir depois.</p>
+
+        <div class="pricing">
+          <div class="price">
+            <div class="price__tag">Básico</div>
+            <div class="price__value">R$ 600</div>
+            <div class="price__desc">Landing page (1 página)</div>
+            <ul>
+              <li>Layout moderno</li>
+              <li>Botão WhatsApp</li>
+              <li>Entrega rápida</li>
+            </ul>
+            <a class="btn btn--ghost btn--full" href="#contato">Pedir orçamento</a>
+          </div>
+
+          <div class="price price--best">
+            <div class="price__tag">Mais vendido</div>
+            <div class="price__value">R$ 900</div>
+            <div class="price__desc">Site (até 5 páginas)</div>
+            <ul>
+              <li>Home + Serviços + Sobre</li>
+              <li>Mapa + redes sociais</li>
+              <li>SEO básico</li>
+            </ul>
+            <a class="btn btn--primary btn--full" id="ctaPlan" href="#">Falar no WhatsApp</a>
+          </div>
+
+          <div class="price">
+            <div class="price__tag">Premium</div>
+            <div class="price__value">R$ 1.200+</div>
+            <div class="price__desc">Site + melhorias e extras</div>
+            <ul>
+              <li>Página rápida</li>
+              <li>Copy/estrutura melhor</li>
+              <li>Suporte inicial</li>
+            </ul>
+            <a class="btn btn--ghost btn--full" href="#contato">Quero Premium</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>Dúvidas</h2>
+
+        <div class="faq">
+          <details>
+            <summary>Em quanto tempo fica pronto?</summary>
+            <p>Normalmente em até 5 dias após você enviar as informações e aprovar o layout.</p>
+          </details>
+
+          <details>
+            <summary>Precisa pagar mensalidade?</summary>
+            <p>Domínio e hospedagem podem ter custo anual/mensal, mas eu te indico opções baratas (ou grátis para começar).</p>
+          </details>
+
+          <details>
+            <summary>Posso atualizar depois?</summary>
+            <p>Sim. Eu posso atualizar para você ou te orientar a alterar informações básicas.</p>
+          </details>
+
+          <details>
+            <summary>Como é o pagamento?</summary>
+            <p>Geralmente 50% na entrada e 50% na entrega (pode combinar).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contato">
+      <div class="container">
+        <h2>Orçamento rápido</h2>
+        <p class="muted">Preencha e eu te respondo (ou clique no WhatsApp).</p>
+
+        <div class="contact">
+          <form class="form" id="form">
+            <label>
+              Seu nome
+              <input name="nome" required placeholder="Ex: Gabriel" />
+            </label>
+            <label>
+              Tipo de negócio
+              <input name="negocio" required placeholder="Ex: Barbearia, Loja..." />
+            </label>
+            <label>
+              WhatsApp
+              <input name="whats" required placeholder="(31) 9xxxx-xxxx" />
+            </label>
+            <label>
+              Mensagem
+              <textarea name="msg" rows="4" placeholder="Quero um site com..."></textarea>
+            </label>
+
+            <button class="btn btn--primary btn--full" type="submit">Enviar no WhatsApp</button>
+            <small class="muted">Ao clicar, abre uma mensagem pronta no WhatsApp.</small>
+          </form>
+
+          <div class="contact__side">
+            <div class="box">
+              <h3>Atendimento</h3>
+              <p>BH e região • Online também</p>
+              <div class="chips">
+                <span class="chip">✅ Orçamento rápido</span>
+                <span class="chip">✅ Entrega em poucos dias</span>
+                <span class="chip">✅ Site responsivo</span>
+              </div>
+              <a class="btn btn--ghost btn--full" id="ctaBottom" href="#">Chamar no WhatsApp</a>
+            </div>
+            <div class="note">
+              <strong>Dica:</strong> troque o número do WhatsApp no <code>script.js</code> e personalize o nome/cores.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <div class="brand__mini">Sites para Negócios</div>
+          <div class="muted">© <span id="year"></span> • Desenvolvedor Web</div>
+        </div>
+        <div class="footer__links">
+          <a href="#servicos">Serviços</a>
+          <a href="#precos">Planos</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+    </footer>
+
+    <a class="wa-float" id="waFloat" href="#" aria-label="WhatsApp flutuante">💬</a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
